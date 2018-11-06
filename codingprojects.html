@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- This is codingprojects.html -->
+<html lang="en">
+	<head>
+	 	<title>Coding Projects - AaronBrunette.com</title>
+	
+		<meta charset="utf-8">
+	
+	  	<meta name="description" content="Coding projects by Aaron Brunette">
+	  	<meta name="keywords" content="programming, projects, software, coding, computer, science, aaron, brunette">
+	  	<meta name="author" content="Aaron Brunette">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<meta property="og:image" content="/miscphotos/headerbackgroundsmaller.jpg" />
+	
+		<link rel="stylesheet" type="text/css" href="main.css">
+	  	<link rel="stylesheet" type="text/css" href="codingprojects.css">
+		<link href="/miscphotos/favicon.png" rel="icon" type="image/x-icon" />
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<span id="skipcontent"><a href="#content">Skip to Content</a></span>
+				<div id="titlebox">AaronBrunette.com</div>
+			</header>
+			
+			<nav>	
+				<ul class="nav_links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>			
+					<li><a id="current" href="">Coding Projects</a></li>
+					<li><a href="photography.html">Photography</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+			
+			<main id="content">
+				<h2>Completed Projects</h2>
+				<table class="project">
+					<tr>
+						<th class="title">
+							ローマ字 &rarr; English
+						</th>
+						<td class="info">
+							<a href="https://github.com/abrunette/421FinalProgram" class="defaultlink" target="_blank">GitHub Link</a>Completed: 2017/12/17
+						</td>
+					</tr>
+					<tr>
+						<td class="summary">
+							A Romaji to English translator.
+						</td>
+						<td class="about">
+							<p>
+								This project required us to design and implement a scanner, parser, and translator for Japanese romaji into english.<br><br>
+								We implemented it in three parts, scanner, parser, and translator, building on the previous parts to add more functionality.
+								The scanner scans words in a text file and determines if they are valid Japanese words. That is to say, they match up with the
+								Japanese syllabary using a DFA map. If they do, they are matched to a certain type to be used later in the parser. Otherwise they are marked ERROR.<br><br>
+								In the parser, the words are checked, in order, after they are scanned to determine if they match a pre-defined BNF grammar rule.
+								If they reach the end, then the sentence is valid, otherwise it is wrong and the user has an option to correct it or end the program.<br><br>
+								Within the parser functions there are calls to translation functions. If the words are matched to a valid english word they will be
+								replaced in the output.<br><br>
+								Several arrays and a map are used to match words to their respective types or translations. There are also some
+								extra functions to improve quality of life for the user, allow for debugging, and make the output easier to understand.
+							</p>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table class="project">
+					<tr>
+						<th class="title">
+							Virtual Memory Manager
+						</th>
+						<td class="info">
+							<a href="https://github.com/abrunette/Virtual-Memory-Manager" class="defaultlink" target="_blank">GitHub Link</a>Completed: 2017/10/25
+						</td>
+					</tr>
+					<tr>
+						<td class="summary">
+							A program that uses a TLB and paging table to manage physical and virtual memory.
+						</td>
+						<td class="about">
+							<p>
+								This project consisted of writing a program that translates logical to physical addresses for a virtual address space of size 216 = 65,536 bytes. 
+								The program will read from a file containing logical addresses and, using a TLB as well as a page table, will translate each logical address 
+								to its corresponding physical address and output the value of the byte stored at the translated physical address. The goal behind this project 
+								is to simulate the steps involved in translating logical to physical addresses.<br><br>
+								The program will read a file containing several 32-bit integer numbers that represent logical addresses. However, it only looks at 
+								16-bit addresses, so it masks the rightmost 16 bits of each logical address. These 16 bits are divided into an 8-bit page number and an 8-bit page offset.<br><br>
+								Memory specifics:<ul style="list-style-type:circle">
+									<li>28 entries in the page table</li>
+									<li>Page size of 28 bytes</li>
+									<li>16 entries in the TLB</li>
+									<li>Frame size of 28 bytes</li>
+									<li>256 frames</li>
+									<li>Physical memory of 65,536 bytes (256 frames × 256-byte frame size)</li>
+								</ul>
+							</p>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table class="project">
+					<tr>
+						<th class="title">
+							Fibonacci Search Algorithm
+						</th>
+						<td class="info">
+							<a href="https://github.com/abrunette/FibonacciSearch" class="defaultlink" target="_blank">GitHub Link</a>Completed: 2017/03/14
+						</td>
+					</tr>
+					<tr>
+						<td class="summary">
+							Searches through an array using the fibonacci sequence as the parameter.
+						</td>
+						<td class="about">
+							An extra credit assignment exploring alternative searching algorithms.<br><br>
+							This algorithm uses fibonacci numbers to section a sorted array and search through segments with sizes of consecutive fibonacci numbers in O(log n).
+						</td>
+					</tr>
+				</table>
+				<br><!------------------------>
+				<h2>In-Progress Projects</h2>
+				<table class="project">
+					<tr>
+						<th class="title">
+							Personal Website
+						</th>
+						<td class="info">
+							<a href="index.html" class="defaultlink">Link</a>In Progress...
+						</td>
+					</tr>
+					<tr>
+						<td class="summary">
+							My personal website providing quick access to my resume, coding projects, photography, contact information, and information about me.
+						</td>
+						<td class="about">
+							<p>
+								This site was meant to be a test site for me to learn the basics of web development as a side project and hobby. Its original purpose was to serve
+								as an alternative location for my resume. While designing my resume I added additional scalability so I could show off my other hobbies.<br><br>
+								This project has been very useful in developing not only my own methods of software design, but improving my code structure, development protocols, and
+								scalability that has had lasting impact on my software design outside of web development.
+								It has also improved my creativity which is something I am deficient in and continue to improve.<br><br>
+								This will most likely be a permanently ongoing project as I branch further into web development and improve my programming skills in a casual setting.
+								It will also be my staging area for future developments in technology that I have an interest in.<br><br>
+								My current plans for this site are to implement a responsive mobile site, learn and add Javascript, and implement ReactJS.
+							</p>
+						</td>
+					</tr>
+				</table>
+				<br><!------------------------>
+				<h2>Future Projects</h2>
+				<table class="project">
+					<tr>
+						<th class="title">
+							Card Game Program
+						</th>
+						<td class="info">
+							<a href="https://github.com/abrunette/cardgames" class="defaultlink" target="_blank">GitHub Link</a>Coming soon...
+						</td>
+					</tr>
+					<tr>
+						<td class="summary">
+							A program that allows you to play cards with others or against the computer.
+						</td>
+						<td class="about">
+							Coming soon...
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table class="project">
+					<tr>
+						<th class="title">
+							Manga Scraper
+						</th>
+						<td class="info">
+							<a href="https://github.com/abrunette/MangaBot" class="defaultlink" target="_blank">GitHub Link</a>Coming soon...
+						</td>
+					</tr>
+					<tr>
+						<td class="summary">
+							A web crawler that searches scanlator sites for new releases.
+						</td>
+						<td class="about">
+							Coming soon...
+						</td>
+					</tr>
+				</table>
+				<br><!------------------------>
+				<div id="imgcont">
+					<a href="https://github.com/abrunette" target="_blank" class="defaultlink"><img src="/miscphotos/github.png" alt="github logo" id="socialimg" width="120"></a>
+				</div>
+			</main>
+			
+			<footer>
+				<h2>More information.</h2>
+					<p>Site email:<a href="mailto:aaron@aaronbrunette.com" id="footer_email">aaron@aaronbrunette.com</a></p>
+					<p><a href="sitemap.html" class="footer_links">Sitemap</a></p>
+					<p><a href="#top" class="footer_links">Back to Top</a></p>
+					<p id="copyright">Copyright &copy; 2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script>, Aaron Brunette.</p>
+				<div>
+					<p id="pagemod">This page was last modified on: <script>document.write(document.lastModified) ;</script></p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
+
+			<!--
+			<table class="project">
+				<tr>
+					<th class="title">
+						
+					</th>
+					<td class="info">
+						<a href="" class="defaultlink" target="_blank">GitHub Link</a>Completed: XXXX/XX/XX
+					</td>
+				</tr>
+				<tr>
+					<td class="summary">
+						
+					</td>
+					<td class="about">
+							
+					</td>
+				</tr>
+			</table>
+			-->

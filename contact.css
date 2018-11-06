@@ -1,0 +1,38 @@
+/* This is contact.css */
+
+#social_links{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	text-align: center;
+}
+
+#socialimg{
+	vertical-align: middle;
+	margin: 4% 4% 1% 4%;
+	width: 9.5%;
+	height: auto;
+}
+
+main p{
+	font-size: 1em;
+}
+
+
+@media only screen and (max-width: 1200px){		/* Tablet landscape CSS */
+	#socialimg{
+		width: 12%;
+	}
+}
+
+@media only screen and (max-width: 900px){		/* Tablet portrait CSS */
+	#socialimg{
+		width: 14%;
+	}
+}
+
+@media only screen and (max-width: 600px){		/* Phone CSS */
+	#socialimg{
+		width: 20%;
+	}
+}

@@ -1,0 +1,49 @@
+/* This is codingprojects.css */
+
+h2 {
+	text-decoration: underline;
+}
+
+.project{
+	margin-right: 1%;
+	border: 1px solid #E1E1E1;
+	border-collapse: collapse;
+	width: 95%;
+}
+
+.title{
+	font-weight: bold;
+	font-size: 170%;
+	text-align: center;
+	padding: 1% 0;
+	width: 25%;
+	border: 1px solid #E1E1E1;
+}
+
+.summary{
+	text-align: center;
+	padding: .2% .3%;
+	border: 1px solid #E1E1E1;
+}
+
+.info{
+	border: 1px solid #E1E1E1;
+	padding-left: .75%;
+}
+
+.info a{
+	margin-right: 2%;
+}
+
+.about{
+	border: 1px solid #E1E1E1;
+	padding: .15% .15% .15% .3%;
+	width: 70%;
+}
+
+#imgcont{
+	margin: 2% auto;
+	text-align: center;
+	width: 17%;
+	height: auto;
+}
