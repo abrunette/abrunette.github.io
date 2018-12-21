@@ -2,6 +2,10 @@
  * Globals
  */
 
+ * {
+  border-radius: 0 !important;
+}
+
 /*
  * Links
  */
@@ -54,6 +58,3 @@ body {
 /*
  * Footer
  */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
-}
