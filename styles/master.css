@@ -1,0 +1,59 @@
+/*
+ * Globals
+ */
+
+/*
+ * Links
+ */
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  background-color: #444;
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+}
+
+#photo {
+  background-image: url("../images/aaronbrunette_logo.jpg");
+  background-size: cover;
+}
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+@media (min-width: 768px) {
+  #photo {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+#photo p:last-child {
+  margin-bottom: 0;
+}
+
+#photo .container {
+  max-width: 40rem;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
